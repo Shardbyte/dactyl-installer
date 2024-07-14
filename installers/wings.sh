@@ -87,7 +87,7 @@ dep_install() {
     install_packages "dnf-utils"
     dnf config-manager --add-repo=https://download.docker.com/linux/fedora/docker-ce.repo
 
-    [ "$CONFIGURE_LETSENCRYPT" == true ]
+    [ "$CONFIGURE_LETSENCRYPT" == true ] && install_packages "epel-release"
 
     install_packages "device-mapper-persistent-data lvm2"
     ;;
