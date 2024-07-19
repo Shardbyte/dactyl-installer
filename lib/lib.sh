@@ -357,7 +357,7 @@ ask_firewall() {
 
 install_firewall() {
   case "$OS" in
-  ubuntu | debian | fedora)
+  ubuntu | debian)
     output ""
     output "Installing Uncomplicated Firewall (UFW)"
 
@@ -371,7 +371,7 @@ install_firewall() {
     success "Enabled Uncomplicated Firewall (UFW)"
 
     ;;
-  rocky | almalinux)
+  rocky | almalinux | fedora)
 
     output ""
     output "Installing FirewallD"+
@@ -390,13 +390,13 @@ install_firewall() {
 
 firewall_allow_ports() {
   case "$OS" in
-  ubuntu | debian | fedora)
+  ubuntu | debian)
     for port in $1; do
       ufw allow "$port"
     done
     ufw --force reload
     ;;
-  rocky | almalinux)
+  rocky | almalinux | fedora)
     for port in $1; do
       firewall-cmd --zone=public --add-port="$port"/tcp --permanent
     done
