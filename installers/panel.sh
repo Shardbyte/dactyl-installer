@@ -218,7 +218,7 @@ fedora_dep() {
   # add remi repo (php8.4)
   install_packages "https://rpms.remirepo.net/fedora/remi-release-42.rpm"
   dnf module reset php -y
-  dnf module enable -y php:remi-8.4
+  dnf module enable -y php:remi-8.1
 }
 
 dep_install() {
