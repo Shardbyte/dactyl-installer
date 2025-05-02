@@ -215,10 +215,10 @@ fedora_dep() {
   install_packages "policycoreutils selinux-policy selinux-policy-targeted \
     setroubleshoot-server setools setools-console mcstrans"
 
-  # add remi repo (php8.1)
-  install_packages "https://rpms.remirepo.net/fedora/remi-release-40.rpm"
-  dnf module switch-to php:remi-8.1
-  dnf module enable -y php:remi-8.1
+  # add remi repo (php8.4)
+  install_packages "https://rpms.remirepo.net/fedora/remi-release-42.rpm"
+  dnf module reset php -y
+  dnf module enable -y php:remi-8.4
   dnf config-manager --set-enabled remi
 }
 
