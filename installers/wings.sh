@@ -85,7 +85,7 @@ dep_install() {
 
   fedora)
     install_packages "dnf-utils"
-    dnf config-manager --add-repo=https://download.docker.com/linux/fedora/docker-ce.repo
+    dnf config-manager --addrepo=https://download.docker.com/linux/fedora/docker-ce.repo
 
     [ "$CONFIGURE_LETSENCRYPT" == true ] && install_packages "epel-release"
 
