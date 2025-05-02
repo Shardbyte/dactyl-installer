@@ -16,8 +16,8 @@
 
 set -e
 
-export GITHUB_SOURCE="v1.2.3"
-export SCRIPT_RELEASE="v1.2.3"
+export GITHUB_SOURCE="v1.2.5"
+export SCRIPT_RELEASE="v1.2.5"
 export GITHUB_BASE_URL="https://raw.githubusercontent.com/Shardbyte/dactyl-installer"
 
 LOG_PATH="/var/log/pterodactyl-installer.log"
