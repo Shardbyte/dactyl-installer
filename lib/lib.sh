@@ -4,7 +4,7 @@
 #  Saint @ Shardbyte.com  #
 #                         #
 ###########################
-# Copyright (c) 2023-2024 Shardbyte
+# Copyright (c) 2023-2025 Shardbyte
 # Author: Shardbyte (Saint) <shard@shardbyte.com>
 # License: MIT
 # https://github.com/Shardbyte/dactyl-installer/raw/master/LICENSE
@@ -112,7 +112,7 @@ welcome() {
   print_brake 70
   output "Pterodactyl panel installation script @ $SCRIPT_RELEASE"
   output ""
-  output "Copyright (C) 2023 - 2024, Shardbyte (Saint) <shard@shardbyte.com>"
+  output "Copyright (C) 2023 - 2025, Shardbyte (Saint) <shard@shardbyte.com>"
   output "https://github.com/Shardbyte/dactyl-installer"
   output ""
   output "This script is NOT associated with the Official Pterodactyl Project."
@@ -537,6 +537,8 @@ rocky | almalinux)
 fedora)
   [ "$OS_VER_MAJOR" == "39" ] && SUPPORTED=true
   [ "$OS_VER_MAJOR" == "40" ] && SUPPORTED=true
+  [ "$OS_VER_MAJOR" == "41" ] && SUPPORTED=true
+  [ "$OS_VER_MAJOR" == "42" ] && SUPPORTED=true
   ;;
 *)
   SUPPORTED=false

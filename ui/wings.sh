@@ -4,7 +4,7 @@
 #  Saint @ Shardbyte.com  #
 #                         #
 ###########################
-# Copyright (c) 2023-2024 Shardbyte
+# Copyright (c) 2023-2025 Shardbyte
 # Author: Shardbyte (Saint) <shard@shardbyte.com>
 # License: MIT
 # https://github.com/Shardbyte/dactyl-installer/raw/master/LICENSE

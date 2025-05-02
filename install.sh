@@ -4,7 +4,7 @@
 #  Saint @ Shardbyte.com  #
 #                         #
 ###########################
-# Copyright (c) 2023-2024 Shardbyte
+# Copyright (c) 2023-2025 Shardbyte
 # Author: Shardbyte (Saint) <shard@shardbyte.com>
 # License: MIT
 # https://github.com/Shardbyte/dactyl-installer/raw/master/LICENSE
@@ -16,8 +16,8 @@
 
 set -e
 
-export GITHUB_SOURCE="v1.2.2"
-export SCRIPT_RELEASE="v1.2.2"
+export GITHUB_SOURCE="v1.2.3"
+export SCRIPT_RELEASE="v1.2.3"
 export GITHUB_BASE_URL="https://raw.githubusercontent.com/Shardbyte/dactyl-installer"
 
 LOG_PATH="/var/log/pterodactyl-installer.log"
